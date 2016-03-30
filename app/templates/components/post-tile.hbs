@@ -1,11 +1,9 @@
 {{yield}}
 <div>
-  <p>{{post.title}} Author: {{post.author}}</p>
+  <p>{{#link-to 'post' post.id}}{{post.title}} Author: {{post.author}}{{/link-to}}</p>
   {{#if isImageShowing }}
     <p><img {{action 'imageHide'}} src={{post.image}} alt={{post.title}} ></p>
     {{else}}
     <button {{action 'imageShow'}}>Show Image</button>
   {{/if}}
-  {{update-post post=post update="update"}}
-  <button {{action 'delete' post}}>Delete Post</button>
 </div>
