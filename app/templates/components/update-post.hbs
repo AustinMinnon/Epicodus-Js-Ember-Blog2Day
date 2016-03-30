@@ -1,0 +1,30 @@
+{{yield}}
+{{#if updatePostForm}}
+  <h4>Update {{post.author}}'s {{post.title}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Post Title</label>
+        {{input value=title id="title" placeholder=post.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=post.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="text">Main Text</label>
+        {{input value=text id="text" placeholder=post.text}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image</label>
+        {{input value=image id="image" placeholder=post.image}}
+      </div>
+        <button {{action 'update' post}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'updatePostForm'}}>Update Post</button>
+{{/if}}

@@ -5,7 +5,7 @@
 
 <div>
   {{#each model as |post|}}
-     {{post-tile post=post destroyPost="destroyPost"}}
+     {{post-tile post=post update="updatePostForm" destroyPost="destroyPost"}}
   {{/each}}
 </div>
 
