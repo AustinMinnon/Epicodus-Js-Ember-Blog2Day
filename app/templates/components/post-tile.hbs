@@ -1,2 +1,10 @@
 {{yield}}
-<p>{{post.title}} by, {{post.author}}</p>
+  <div>
+    <p>{{post.title}} Author: {{post.author}}</p>
+      {{#if isImageShowing }}
+        <p><img {{action 'imageHide'}} src={{post.image}} alt={{post.title}} ></p>
+        {{else}}
+          <button {{action 'imageShow'}}>Show Image</button>
+      {{/if}}
+       <button {{action 'delete' post}}>Delete Post</button>
+  </div>

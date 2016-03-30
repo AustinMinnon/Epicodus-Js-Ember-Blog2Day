@@ -1,0 +1,30 @@
+{{yield}}
+{{#if addNewPost}}
+  <h1>New Blog Post</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="title">Post Title</label>
+          {{input value=title id="title"}}
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          {{input value=author id="author"}}
+        </div>
+
+        <div class="form-group">
+          <label for="text">Main Text</label>
+          {{input value=text id="text"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image</label>
+          {{input value=image id="image"}}
+        </div>
+        <button {{action 'postSave'}}>Save Post</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'postFormShow'}}>New Blog Post</button>
+{{/if}}
