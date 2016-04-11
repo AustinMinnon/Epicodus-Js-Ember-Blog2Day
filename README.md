@@ -1,7 +1,7 @@
-# Blog-jgam
+# Blog Posts
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A website where users can post anything including text, and images.
+### By _**Austin Minnon & Joshua Gustafson**_
 
 ## Prerequisites
 
@@ -10,44 +10,34 @@ You will need the following things properly installed on your computer.
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
+* [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-## Installation
+## Setup & Installation
 
 * `git clone <repository-url>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
-
-## Running / Development
-
-* `ember server`
+* `ember i emberfire`
+* `ember i ember-bootstrap`
+* `ember build`
+* `ember s`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Bugs
+ No known bugs
 
-Make use of the many generators for code, try `ember help generate` for more details
+## Technologies Used
 
-### Running Tests
+_Javascript, Ember, EmberFire, Node, Bower, Bootstrap_
 
-* `ember test`
-* `ember test --server`
+##GitHub Pages
+http://austinminnon.github.io/Epicodus-Js-Ember-Q-A
 
-### Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+### License
 
-### Deploying
+_MIT license_
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 _**Austin Minnon & Joshua Gustafson**_
